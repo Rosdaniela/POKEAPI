@@ -1,0 +1,258 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.container {
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.input-search {
+    width: 70vw;
+    max-width: 700px;
+    font-size: 18px;
+    padding: 8px;
+    background-color: rgba(204, 18, 18, 0.171);
+    border-radius: 8px;
+    border: 2px solid #8b0000;
+    min-width: 200px;
+    color: #95ad8f;
+
+    &:hover {
+        outline: none !important;
+        border: 2px solid #8b0000;
+        box-shadow: 0 0 5px rgba(139, 0, 0, 0.3);
+        background-color: #8b0000;
+    }
+}
+
+.logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+}
+.logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+        animation: logo-spin infinite 20s linear;
+    }
+}
+
+.card {
+    padding: 2em;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1001;
+}
+
+.modal {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+    color: black;
+    z-index: 1002;
+}
+
+.modal img {
+    width: 100px;
+    height: auto;
+}
+
+.modal button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #8b0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal button:hover {
+    background-color: #8b0000;
+}
+
+.modal h2 {
+    text-transform: capitalize;
+    color: #000000;
+    margin-bottom: 1rem;
+    font-size: 1.5em;
+}
+
+.filtros-container {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.select-tipo,
+.select-orden {
+    padding: 8px;
+    border: 2px solid #8b0000;
+    border-radius: 8px;
+    font-size: 18px;
+    background-color: rgba(204, 18, 18, 0.171);
+    cursor: pointer;
+    min-width: 150px;
+    color: #b8a6a6;
+
+    &:focus {
+        outline: none !important;
+        border: 2px solid #8b0000;
+        box-shadow: 0 0 5px rgba(139, 0, 0, 0.3);
+    }
+}
+
+/* Estilos para las opciones del selector */
+.select-tipo option,
+.select-orden option {
+    background-color: #641c1c;
+    color: #f0f0f0;
+    padding: 8px;
+}
+
+.select-tipo option:hover,
+.select-orden option:hover {
+    background-color: #f0f0f0;
+}
+
+.select-tipo:hover,
+.select-orden:hover {
+    background-color: #8b0000;
+    border-color: #8b0000;
+}
+
+.pokemon-type-badge {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 4px;
+}
+
+/* Colores para cada tipo de Pokémon */
+.type-normal {
+    background-color: #a8a878;
+    color: white;
+}
+.type-fire {
+    background-color: #f08030;
+    color: white;
+}
+.type-water {
+    background-color: #6890f0;
+    color: white;
+}
+.type-electric {
+    background-color: #f8d030;
+    color: black;
+}
+.type-grass {
+    background-color: #78c850;
+    color: white;
+}
+.type-ice {
+    background-color: #98d8d8;
+    color: black;
+}
+.type-fighting {
+    background-color: #c03028;
+    color: white;
+}
+.type-poison {
+    background-color: #a040a0;
+    color: white;
+}
+.type-ground {
+    background-color: #e0c068;
+    color: black;
+}
+.type-flying {
+    background-color: #a890f0;
+    color: white;
+}
+.type-psychic {
+    background-color: #f85888;
+    color: white;
+}
+.type-bug {
+    background-color: #a8b820;
+    color: white;
+}
+.type-rock {
+    background-color: #b8a038;
+    color: white;
+}
+.type-ghost {
+    background-color: #705898;
+    color: white;
+}
+.type-dragon {
+    background-color: #7038f8;
+    color: white;
+}
+.type-dark {
+    background-color: #705848;
+    color: white;
+}
+.type-steel {
+    background-color: #b8b8d0;
+    color: black;
+}
+.type-fairy {
+    background-color: #ee99ac;
+    color: black;
+}
